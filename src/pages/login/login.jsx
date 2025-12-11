@@ -45,6 +45,7 @@ export default function LoginPage(){
                     onChange={
                     (e)=>{
                         setEmail(e.target.value)
+                        console.log(e)
                     }
                     } 
                     value={email}    />
