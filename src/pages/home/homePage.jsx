@@ -12,7 +12,7 @@ export default function HomePage() {
     return (
         <>         
             <Header/>
-            <div className="w-full h-[calc(100vh-100px)] flex justify-center items-center bg-amber-200">
+            <div className="w-full h-[calc(100vh-100px)] flex justify-center items-center bg-primary">
                 <Routes path = "/*">
                     <Route path = "/contact" element ={<ContactPage/>}/>
                     <Route path = "/gallery" element ={<GalleryPage/>}/>

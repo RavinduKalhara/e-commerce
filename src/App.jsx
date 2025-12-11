@@ -7,6 +7,7 @@ import LoginPage from './pages/login/login.jsx'
 import { Toaster } from 'react-hot-toast'
 import AdminPage from './pages/admin/adminPage.jsx'
 import RegesterUser from './pages/regester/regester.jsx'
+import Testing from './components/testing.jsx'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <BrowserRouter>
       <Toaster position='top-right'/>
         <Routes path = "/">
+          <Route path = "/testing" element = {<Testing />}></Route>
           <Route path = "/regester" element = {<RegesterUser/>}></Route>
           <Route path = "/login" element = { <LoginPage /> }></Route>
           <Route path = "/admin/*" element = { <AdminPage/>}></Route>
